@@ -199,7 +199,8 @@ input[type="time"] {
 }
 
 .cita {
-  width: 360px;
+  width: 350px;
+  box-sizing: border-box;
   padding: 2rem;
   background: white;
   border-bottom: 1px solid #e1e1e1;
