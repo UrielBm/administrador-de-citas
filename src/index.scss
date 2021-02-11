@@ -1,0 +1,314 @@
+$font_color: #aaaaaa;
+$background_color: #a4ebf3;
+$background_color_2: #ccf2f4;
+$button_color: #f6f6f6;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  min-height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: linear-gradient(
+    -225deg,
+    $background_color 0%,
+    $background_color_2 52%,
+    $background_color 100%
+  );
+  min-height: 100%;
+  padding-bottom: 5rem;
+}
+h1 {
+  font-size: 4rem;
+  color: $font_color;
+  padding: 3rem 0;
+  text-align: center;
+
+  text-transform: uppercase;
+
+  font-family: "Staatliches", cursive;
+  letter-spacing: 1px;
+}
+h2 {
+  font-size: 3rem;
+  color: $font_color;
+  padding: 3rem 0;
+  text-align: center;
+
+  text-transform: uppercase;
+
+  font-family: "Staatliches", cursive;
+  letter-spacing: 1px;
+}
+.lista-citas .media {
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 3rem;
+}
+
+.lista-citas .media:last-of-type {
+  border-bottom: 0;
+}
+.lista-citas .media-body p {
+  margin: 0;
+}
+.lista-citas .media-body button {
+  margin-top: 1rem !important;
+}
+.lista-citas .media-body span {
+  font-weight: bold;
+}
+
+label {
+  color: $font_color;
+}
+
+input[type="date"],
+input[type="time"] {
+  height: 38px;
+  padding: 6px 10px;
+  background-color: #fff;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+.cita {
+  width: 360px;
+  padding: 2rem;
+  background: white;
+  border-bottom: 1px solid #e1e1e1;
+  color: black;
+  margin-bottom: 1rem;
+  .wrapperButton {
+    .borrar {
+      width: 100%;
+      color: $button_color;
+      background-color: $font_color;
+      border: none;
+      transition: background_color, 0.5s;
+    }
+    .borrar:hover {
+      background-color: #c10059;
+      color: black;
+    }
+  }
+}
+
+.cita p {
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+.cita p span {
+  font-weight: normal;
+}
+.cita:first-of-type {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.cita:last-of-type {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.button.eliminar,
+.button.eliminar:hover {
+  background-color: #c10059;
+  color: white;
+  margin-top: 2rem;
+}
+
+.alerta-error {
+  background-color: $button_color;
+  color: red;
+  padding: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Staatliches", cursive;
+}
+.wrapperCards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  .wrapperCitas {
+    .wrapperListCitas {
+      .ListCitas {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+.wrapperInputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .wrapperInput {
+    width: 340px;
+    .label {
+      text-align: start;
+      margin-bottom: 0.5rem;
+    }
+    .input {
+      border: none;
+      border-radius: 0.5rem;
+      width: 100%;
+    }
+    .input::placeholder {
+      color: $font_color;
+    }
+  }
+  .wrapperTextArea {
+    width: 340px;
+    .label {
+      text-align: start;
+      margin-bottom: 0.5rem;
+    }
+    .textarea {
+      width: 100%;
+      border: none;
+      border-radius: 0.5rem;
+    }
+  }
+  .wrapperButton {
+    width: 360px;
+    .registrar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      color: $button_color;
+      background-color: $font_color;
+      width: 100%;
+      border-radius: 0.3rem;
+      padding: 0.3rem 1rem;
+    }
+  }
+}
