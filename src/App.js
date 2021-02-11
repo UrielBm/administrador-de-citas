@@ -25,7 +25,7 @@ function App() {
 
   return (
     <>
-      <h1>Administrador de Pascientes</h1>
+      <h1>Administrador de Pacientes</h1>
       <div className="wrapperCards">
         <div className="wrapperForm">
           <Formulario handleSaveDates={handleSaveDates} />
