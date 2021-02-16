@@ -2,7 +2,7 @@
 
 Hola Soy Uriel esta App se creo como un producto de prueba para un curso se ocuparón tecnologias como Sass, React, Js, localstorage, HTML.
 
-Se trata de una App paracrear citas tipo veterinario donde escoges el nombre de la mascota, el dueño hora y fecha y los sintomas que presenta.
+Se trata de una App para crear citas tipo veterinario donde escoges el nombre de la mascota, el dueño hora y fecha y los sintomas que presenta.
 
 ## Demo
 El demo de la Aplicación podras encontrarlo en la siguiente dirección:
